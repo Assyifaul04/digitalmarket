@@ -1,27 +1,28 @@
-import Link from "next/link"
-import { Icons } from "./Icons"
-import MaxWidthWrapper from "./MaxWidthWrapper"
-import NavItems from "./NavItems"
+import Link from "next/link";
+import { Icons } from "./Icons";
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import NavItems from "./NavItems";
 
 const Navbar = () => {
   return (
     <div className="bg-white sticky top-0 z-50 inset-x-0 h-16 shadow">
       <header className="relative bg-white">
         <MaxWidthWrapper>
-          <div className="flex items-center justify-between h-16 border-b border-gray-200 px-4">
+          {/* Container utama */}
+          <div className="flex items-center h-16 border-b border-gray-200 px-4">
             {/* Logo */}
             <Link href="/">
-              <Icons.logo className="h-6 w-auto" />
+              <Icons.logo className="h-10 w-auto" />
             </Link>
-          </div>
-
-          <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
-            <NavItems />
+            {/* Menu navigasi (hidden di mobile, tampil di lg ke atas) */}
+            <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">
+              <NavItems />
+            </div>
           </div>
         </MaxWidthWrapper>
       </header>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
