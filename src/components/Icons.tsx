@@ -4,9 +4,7 @@ export const Icons = {
   logo: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1600 896"
-      width="1600"
-      height="896"
+      viewBox="450 100 720 700"
       {...props}
     >
       <path
