@@ -40,7 +40,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link href="/products" className={buttonVariants()}>
-              menelusuri
+              menjelajahi
             </Link>
             <Button variant="ghost">Janji kualitas kami &rarr;</Button>
           </div>
