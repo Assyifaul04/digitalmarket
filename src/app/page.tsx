@@ -29,20 +29,26 @@ export default function Home() {
     <>
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
             Pasar digital untuk{" "}
-            <span className="text-blue-600">aset berkualitas tinggi</span>.
+            <span className="text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text">
+              file pemrograman berkualitas
+            </span>.
           </h1>
-          <p className="mt-6 text-lg max-w-prose text-muted-foreground">
-            Selamat datang di <b>digitalmarket</b>. Setiap aset di platform kami
-            telah diverifikasi oleh tim kami untuk memastikan standar kualitas
-            terbaik.
+          <p className="mt-8 text-lg md:text-xl max-w-prose text-muted-foreground leading-relaxed">
+            Selamat datang di <strong className="text-blue-600 font-semibold">CodeMarket</strong>. 
+            Temukan koleksi lengkap <span className="font-medium text-gray-700">source code</span>, 
+            <span className="font-medium text-gray-700">script</span>, 
+            <span className="font-medium text-gray-700">template</span>, dan
+            <span className="font-medium text-gray-700">komponen pemrograman</span> yang telah
+            diverifikasi oleh developer berpengalaman untuk memastikan kualitas
+            dan fungsionalitas terbaik.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link href="/products" className={buttonVariants()}>
-              menjelajahi
+              Jelajahi Source Code
             </Link>
-            <Button variant="ghost">Janji kualitas kami &rarr;</Button>
+            <Button variant="ghost">Jaminan kualitas code &rarr;</Button>
           </div>
         </div>
 
